@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <span class="label label-default">默认标签</span>
+        <span class="label label-primary">主要标签</span>
+        <span class="label label-success">成功标签</span>
+        <span class="label label-info">信息标签</span>
+        <span class="label label-warning">警告标签</span>
+        <span class="label label-danger">危险标签</span>
+        <p>各类标签</p><br/>
+
+        <a href="#">Mailbox <span class="badge">50</span></a>
+        <p>徽章用于突出显示新的或未读的项,与标签相似，主要的区别在于徽章的边角更加圆滑。<br/>
+        如需使用徽章，只需要把&lt;span class="badge"&gt;添加到链接、Bootstrap 导航等这些元素上即可。</p>
+        <br/>
+
+        <div class="alert alert-success">成功！很好地完成了提交。</div>
+        <div class="alert alert-info">信息！请注意这个信息。</div>
+        <div class="alert alert-warning">警告！请不要提交。</div>
+        <div class="alert alert-danger">错误！请进行一些更改。</div>
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-hidden="true">
+                &times;
+            </button>
+            错误！请进行一些更改。(可取消的警告，添加button元素的data-dismiss="alert"属性)
+        </div>
+        <div class="alert alert-warning">
+            <a href="#" class="alert-link">警告！请不要提交。(使用a标签 class="alert-link")</a>
+        </div>
+        <p>alert</p><br/>
+
+        <div class="progress progress-striped active">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                 aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                <span class="sr-only">40% 完成</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 90%;">
+                <span class="sr-only">90% 完成（成功）</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 30%;">
+                <span class="sr-only">30% 完成（信息）</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 20%;">
+                <span class="sr-only">20% 完成（警告）</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 10%;">
+                <span class="sr-only">10% 完成（危险）</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 40%;">
+                <span class="sr-only">40% 完成</span>
+            </div>
+            <div class="progress-bar progress-bar-info" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 30%;">
+                <span class="sr-only">40% 完成（信息）</span>
+            </div>
+            <div class="progress-bar progress-bar-warning" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 20%;">
+                <span class="sr-only">20% 完成（警告）</span>
+            </div>
+        </div>
+        <p>进度条 style="width: 90%;"表示进度条在 90% 的位置<br/> 堆叠的进度条(和为100%)</p>
+
+        <div class="container">
+            <h2>内嵌多媒体对象</h2>
+            <p>在多媒体对象里头可以再插入多媒体对象:</p><br>
+            <div class="media">
+                <div class="media-left">
+                    <img src="https://static.runoob.com/images/mix/img_avatar.png" class="media-object" style="width:45px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">RUNOOB-1 <small><i>Posted on February 19, 2016</i></small></h4>
+                    <p>这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。</p>
+
+                    <!-- 内嵌多媒体对象 -->
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="https://static.runoob.com/images/mix/img_avatar.png" class="media-object" style="width:45px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">RUNOOB-2 <small><i>Posted on February 19, 2016</i></small></h4>
+                            <p>这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。</p>
+
+                            <!-- 内嵌多媒体对象 -->
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="https://static.runoob.com/images/mix/img_avatar.png" class="media-object" style="width:45px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">RUNOOB-3 <small><i>Posted on February 19, 2016</i></small></h4>
+                                    <p>这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。这是一些示例文本。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-primary"><!--panel-default-->
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    带有 title 的面板标题(可选, panel对应的div加入class="panel-default/primary.."设置带语境色彩的面板)
+                </h3>
+            </div>
+            <div class="panel-body">
+                面板内容(基础)
+            </div>
+            <table class="table">
+                <th>产品</th><th>价格 </th>
+                <tr><td>产品 A</td><td>200</td></tr>
+                <tr><td>产品 B</td><td>400</td></tr>
+            </table>
+            <p>&nbsp;&nbsp;&nbsp;<strong>面板组件用于把 DOM 组件插入到一个盒子中</strong>, table等标签的位置无限制</p>
+            <div class="panel-footer">面板脚注(面版脚注不会从带语境色彩的面板中继承颜色和边框，因为它不是前景中的内容)</div>
+        </div>
+
+        <div class="well well-lg">您好，我在大的 Well 中！<br/>Well 是一种会引起内容凹陷显示或插图效果的容器,class="well well-lg/sm"设置well大小</div>
+        <p></p>
+
+
+    </div>
+</body>
+</html>
