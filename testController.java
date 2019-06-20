@@ -77,4 +77,7 @@ public class TestController {
     
     @RequestMapping("/affix.html")
     public String testForward(){return "affix";}
+    
+    @RequestMapping("/vue1")
+    public String vueTest(){return "test1";}
 }
