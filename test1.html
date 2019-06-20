@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+    <p><a href="https://www.runoob.com/vue2/vue-install.html">https://www.runoob.com/vue2/vue-install.html</a></p>
+    <p>Vue.js 为两个最为常用的指令提供了特别的缩写： &lt;a v-bind:href="url" &gt; &lt;/a &gt; -- &gt;  &lt;a :href="url" &gt; &lt;/a &gt;</p>
+    &lt;a v-on:click="doSomething"&gt;&lt;/a&gt; --&gt; &lt;a @click="doSomething"&gt;&lt;/a&gt;
+
+    <hr>
+<!--    <p>vue demo</p>-->
+<!--    <div id="app">-->
+<!--        <p>{{ message }}</p>-->
+<!--    </div>-->
+<!--    <script>-->
+<!--        new Vue({-->
+<!--            el: '#app',-->
+<!--            data: {-->
+<!--                message: 'Hello Vue.js!'-->
+<!--            }-->
+<!--        });-->
+<!--    </script>-->
+
+<!--    <p>vue的JavaScript表达式支持</p>-->
+<!--    <div id="app">-->
+<!--        {{5+5}}<br>-->
+<!--        {{ ok ? 'YES' : 'NO' }}<br>-->
+<!--        {{ message.split('').reverse().join('') }}-->
+<!--        <div v-bind:id="'list-' + id">菜鸟教程</div>-->
+<!--    </div>-->
+<!--    <script>-->
+<!--        new Vue({-->
+<!--            el: '#app',-->
+<!--            data: {-->
+<!--                ok: true,-->
+<!--                message: 'RUNOOB',-->
+<!--                id : 1-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
+
+<!--    <p>在input输入框中用v-model指令来实现双向数据绑定</p>-->
+<!--    <p>v-model 指令用来在 input、select、textarea、checkbox、radio 等表单控件元素上创建双向数据绑定，根据表单上的值，自动更新绑定的元素的值。</p>-->
+<!--    <div id="app">-->
+<!--        <p>{{ message }}</p>-->
+<!--        <button v-on:click="reverseMessage">反转字符串</button>-->
+<!--    </div>-->
+<!--    <script>-->
+<!--        new Vue({-->
+<!--            el: '#app',-->
+<!--            data: {-->
+<!--                message: 'Runoob!'-->
+<!--            },-->
+<!--            methods: {-->
+<!--                reverseMessage: function () {-->
+<!--                    this.message = this.message.split('').reverse().join('')-->
+<!--                }-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
+
+<!--    <p>按钮的事件我们可以使用 v-on 监听事件，并对用户的输入进行响应。</p>-->
+<!--    <div id="app">-->
+<!--        <p>{{ message }}</p>-->
+<!--        <button v-on:click="reverseMessage">反转字符串</button>-->
+<!--    </div>-->
+
+<!--    <script>-->
+<!--        new Vue({-->
+<!--            el: '#app',-->
+<!--            data: {-->
+<!--                message: 'Runoob!'-->
+<!--            },-->
+<!--            methods: {-->
+<!--                reverseMessage: function () {-->
+<!--                    this.message = this.message.split('').reverse().join('')-->
+<!--                }-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
+
+<!--    <p>自定义过滤器，被用作一些常见的文本格式化。由"管道符"指示</p>-->
+<!--    <div id="app">-->
+<!--        {{ message | capitalize }}-->
+<!--    </div>-->
+
+<!--    <script>-->
+<!--        new Vue({-->
+<!--            el: '#app',-->
+<!--            data: {-->
+<!--                message: 'runoob'-->
+<!--            },-->
+<!--            filters: {-->
+<!--                capitalize: function (value) {-->
+<!--                    if (!value) return ''-->
+<!--                    value = value.toString()-->
+<!--                    return value.charAt(0).toUpperCase() + value.slice(1)-->
+<!--                }-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
+
+    <p>循环使用 v-for 指令,条件语句用v-if,计算属性computed</p>
+    <div id="app">
+        <ol>
+            <li v-for="site in sites">
+                {{ site.name }}
+            </li>
+        </ol>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                sites: [
+                    { name: 'Runoob' },
+                    { name: 'Google' },
+                    { name: 'Taobao' }
+                ]
+            }
+        })
+    </script>
+
+</body>
+</html>
